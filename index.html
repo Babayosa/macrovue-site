@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macrovue — Scan any menu. Eat smarter.</title>
+  <meta name="description" content="Point your camera at any restaurant menu. Get personalized meal picks with macros, tailored to your dietary goal. Free for iOS.">
+  <meta property="og:title" content="Macrovue — Scan any menu. Eat smarter.">
+  <meta property="og:description" content="Point your camera at any restaurant menu. Get personalized meal picks with macros, tailored to your dietary goal.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Macrovue</a>
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#features" class="nav-link" data-section="features">Features</a>
+        <a href="#pricing" class="nav-link" data-section="pricing">Pricing</a>
+        <a href="#faq" class="nav-link" data-section="faq">FAQ</a>
+        <a href="#download" class="nav-download">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-badge fade-in">iOS App</p>
+        <h1 class="hero-title fade-in">Scan any menu.<br>Eat smarter.</h1>
+        <p class="hero-subtitle fade-in">You're eating out, trying to stay on track, staring at a menu with no macros listed. Macrovue reads it for you — point your camera, set your goal, get your top picks with estimated macros in seconds.</p>
+        <div class="hero-actions fade-in">
+          <!-- TODO: replace with App Store URL -->
+          <a href="#download" class="btn btn-primary">Download on App Store</a>
+          <span class="hero-meta">Free forever &middot; No account required &middot; iOS 17+</span>
+        </div>
+      </div>
+      <div class="hero-phone fade-in">
+        <div class="phone-frame phone-float">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="mock-ui">
+              <span class="mock-badge">Cutting</span>
+              <p class="mock-heading">Your Top Picks</p>
+              <div class="mock-card">
+                <div class="mock-card-rank">1</div>
+                <div class="mock-card-info">
+                  <div class="mock-card-top"><span>Grilled Chicken Salad</span><span>420 cal</span></div>
+                  <div class="mock-macros">
+                    <div class="mock-macro-row"><div class="mock-macro-track"><div class="mock-macro-fill mock-p" style="width:75%"></div></div><span>P 38g</span></div>
+                    <div class="mock-macro-row"><div class="mock-macro-track"><div class="mock-macro-fill mock-c" style="width:28%"></div></div><span>C 22g</span></div>
+                    <div class="mock-macro-row"><div class="mock-macro-track"><div class="mock-macro-fill mock-f" style="width:38%"></div></div><span>F 18g</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mock-card">
+                <div class="mock-card-rank">2</div>
+                <div class="mock-card-info">
+                  <div class="mock-card-top"><span>Salmon &amp; Vegetables</span><span>510 cal</span></div>
+                  <div class="mock-macros">
+                    <div class="mock-macro-row"><div class="mock-macro-track"><div class="mock-macro-fill mock-p" style="width:65%"></div></div><span>P 34g</span></div>
+                    <div class="mock-macro-row"><div class="mock-macro-track"><div class="mock-macro-fill mock-c" style="width:22%"></div></div><span>C 18g</span></div>
+                    <div class="mock-macro-row"><div class="mock-macro-track"><div class="mock-macro-fill mock-f" style="width:50%"></div></div><span>F 24g</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mock-card">
+                <div class="mock-card-rank">3</div>
+                <div class="mock-card-info">
+                  <div class="mock-card-top"><span>Turkey Wrap</span><span>380 cal</span></div>
+                  <div class="mock-macros">
+                    <div class="mock-macro-row"><div class="mock-macro-track"><div class="mock-macro-fill mock-p" style="width:60%"></div></div><span>P 28g</span></div>
+                    <div class="mock-macro-row"><div class="mock-macro-track"><div class="mock-macro-fill mock-c" style="width:45%"></div></div><span>C 35g</span></div>
+                    <div class="mock-macro-row"><div class="mock-macro-track"><div class="mock-macro-fill mock-f" style="width:25%"></div></div><span>F 12g</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-bar">
+    <div class="trust-inner fade-in">
+      <div class="trust-item">
+        <span class="trust-number">3 sec</span>
+        <span class="trust-label">Average scan time</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-number">Any</span>
+        <span class="trust-label">Restaurant works</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-number">Zero</span>
+        <span class="trust-label">Photos uploaded</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="features-inner">
+      <h2 class="section-title fade-in">What it does</h2>
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <h3>Camera-first</h3>
+          <p>Point, scan, done. No searching restaurant databases. No typing dish names. Just aim your camera at the menu.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3>Personalized</h3>
+          <p>Tailored to your goal. Cutting, bulking, keto, or just eating healthier. Your recommendations match your plan.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Top 3 picks</h3>
+          <p>Your best choices ranked with estimated macros. No more guessing. No more "I'll just get the salad" regret.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+          </div>
+          <h3>Items to avoid</h3>
+          <p>Know what to skip before you order. See which dishes work against your goal so you don't waste a cheat meal.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Any restaurant</h3>
+          <p>Works everywhere. No database needed. Hole-in-the-wall taco spot? Hotel buffet? Street food menu? Just scan it.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Private</h3>
+          <p>On-device OCR. Your menu photos stay on your phone. No cloud uploads. No food diary shared with strangers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="how-it-works">
+    <div class="how-inner">
+      <h2 class="section-title fade-in">How it works</h2>
+      <div class="steps fade-in">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Scan</h3>
+          <p>Point your camera at any menu. Paper, digital, chalkboard.</p>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>Set your goal</h3>
+          <p>Weight loss, bulking, keto, or healthy eating.</p>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>Eat smart</h3>
+          <p>Get your top 3 picks with estimated macros in seconds.</p>
+        </div>
+      </div>
+      <p class="steps-punchline fade-in">Point. Scan. Eat.</p>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="pricing-inner">
+      <h2 class="section-title fade-in">Simple pricing</h2>
+      <p class="pricing-subtitle fade-in">Start free. Upgrade when you're hooked.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card fade-in">
+          <h3 class="pricing-card-title">Free</h3>
+          <div class="pricing-card-price">$0</div>
+          <p class="pricing-card-period">forever</p>
+          <ul class="pricing-card-features">
+            <li>Core menu scanning</li>
+            <li>3 recommendations per scan</li>
+            <li>All dietary goals</li>
+          </ul>
+          <a href="#download" class="btn btn-secondary">Download Free</a>
+        </div>
+        <div class="pricing-card pricing-card--featured fade-in">
+          <h3 class="pricing-card-title">Pro</h3>
+          <div class="pricing-card-price">TBD</div>
+          <p class="pricing-card-period">per month</p>
+          <ul class="pricing-card-features">
+            <li>Unlimited scans</li>
+            <li>Detailed macro breakdowns</li>
+            <li>Save favorites</li>
+          </ul>
+          <a href="#download" class="btn btn-primary">Get Pro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="faq-inner">
+      <h2 class="section-title fade-in">Frequently asked</h2>
+      <div class="faq-list fade-in">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does it work?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Macrovue uses on-device OCR to read the menu text from your camera, then AI analyzes the dishes against your dietary goal to find your best options and estimate macros.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do I need internet?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>The OCR (reading the menu) works on-device with no connection. The AI analysis that picks your best dishes and estimates macros requires an internet connection.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What dietary goals are supported?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Weight loss, muscle gain, keto, high protein, low carb, low fat, balanced, and healthy eating. Pick the one that matches your plan.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is my data private?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Menu photos are processed on-device using Apple's Vision framework. Your photos are never uploaded. Only the extracted text is sent for AI analysis.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What restaurants does it work at?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Any. Macrovue reads the menu directly &mdash; it doesn't rely on a restaurant database. If the menu has text, it works. Chain or local, fancy or fast food.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is it free?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>The core experience is free: scan menus, get 3 recommendations per scan, use any dietary goal. Pro unlocks unlimited scans, detailed macro breakdowns, and saved favorites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="download" id="download">
+    <div class="download-inner">
+      <h2 class="section-title fade-in">Get Macrovue</h2>
+      <p class="download-subtitle fade-in">Free on the App Store. No account required.</p>
+      <!-- TODO: replace with App Store URL -->
+      <a href="#" class="btn btn-primary btn-lg fade-in">Download on App Store</a>
+      <p class="download-meta fade-in">Requires iOS 17 or later &middot; iPhone</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-brand">Macrovue</span>
+      <span class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <span class="footer-copy">&copy; 2026</span>
+      </span>
+    </div>
+  </footer>
+
+  <canvas id="flow-field"></canvas>
+  <script src="flow-field.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const isActive = item.classList.contains('active');
+
+        document.querySelectorAll('.faq-item.active').forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          i.querySelector('.faq-answer').style.maxHeight = null;
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+          button.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 20 + 'px';
+        }
+      });
+    });
+
+    // Scroll-triggered fade-ins
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+    // Nav active state + scroll shrink
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link[data-section]');
+    const nav = document.querySelector('.nav');
+
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav-scrolled', window.scrollY > 40);
+
+      let current = '';
+      sections.forEach(section => {
+        if (window.scrollY >= section.offsetTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.dataset.section === current);
+      });
+    }, { passive: true });
+
+    // Mobile hamburger
+    const hamburger = document.querySelector('.nav-hamburger');
+    const navLinksEl = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinksEl.classList.toggle('open');
+    });
+
+    // Close mobile nav on link click
+    navLinksEl.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navLinksEl.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
