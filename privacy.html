@@ -4,152 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Macrovue</title>
-  <meta name="description" content="Macrovue Privacy Policy. How we handle your data when you use our iOS menu scanning app.">
+  <meta name="description" content="Macrovue privacy policy. Your photos never leave your device.">
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      color: #111;
-      background: #fafafa;
-      padding: 24px;
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .container {
-      background: #fff;
-      border-radius: 16px;
-      padding: 48px;
-      max-width: 720px;
-      margin: 40px auto;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    }
-    @media (max-width: 640px) {
-      .container { padding: 28px 20px; margin: 16px auto; }
-    }
-    .back {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      margin-bottom: 32px;
-      font-size: 14px;
-      font-weight: 500;
-      color: #2db851;
-      text-decoration: none;
-    }
-    .back:hover { text-decoration: underline; }
-    h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
-    .date { color: #888; font-size: 14px; margin-bottom: 36px; }
-    h2 { font-size: 18px; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #111; }
-    p, li { font-size: 15px; color: #333; margin-bottom: 12px; }
-    ul { padding-left: 20px; margin-bottom: 12px; }
-    li { margin-bottom: 6px; }
-    strong { font-weight: 600; color: #111; }
-    a { color: #2db851; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
-    th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 14px; }
-    th { font-weight: 600; background: #fafafa; color: #555; }
-    .highlight {
-      background: #f0faf3;
-      border-left: 3px solid #2db851;
-      padding: 14px 18px;
-      border-radius: 0 10px 10px 0;
-      margin: 16px 0;
-      font-size: 14px;
-      color: #333;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <a class="back" href="/">&#8592; Back to Macrovue</a>
-    <h1>Privacy Policy</h1>
-    <p class="date">Effective date: February 8, 2026</p>
 
-    <h2>1. Overview</h2>
-    <p>Macrovue ("the App") is an iOS application that scans restaurant menus and provides personalized meal recommendations with estimated macronutrient information. This policy explains what data the App accesses, how it is used, and what is shared with third parties.</p>
-
-    <div class="highlight">
-      <strong>The short version:</strong> Your photos never leave your device. Only extracted menu text is sent to OpenAI for analysis. We don't collect personal data, run analytics, or track you.
+<!-- ======== Nav ======== -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Macrovue</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#features">Features</a>
+      <a href="privacy.html">Privacy</a>
     </div>
-
-    <h2>2. Data Processed on Your Device</h2>
-    <p>The following data is processed entirely on your iPhone and <strong>never transmitted</strong> to any server:</p>
-    <ul>
-      <li><strong>Menu photos</strong> — processed using Apple's on-device Vision framework (OCR). The photo itself is never uploaded or sent anywhere.</li>
-      <li><strong>Dietary goals</strong> — stored in local app storage (UserDefaults) on your device.</li>
-      <li><strong>App preferences</strong> — settings and consent choices stored locally.</li>
-    </ul>
-
-    <h2>3. Data Sent to Third Parties</h2>
-    <p>When you scan a menu and approve AI analysis, the following data is sent to OpenAI's API:</p>
-
-    <table>
-      <tr>
-        <th>Data</th>
-        <th>Purpose</th>
-        <th>Recipient</th>
-      </tr>
-      <tr>
-        <td>Extracted menu text</td>
-        <td>Generate meal recommendations and macro estimates</td>
-        <td>OpenAI (api.openai.com)</td>
-      </tr>
-      <tr>
-        <td>Your dietary goal labels</td>
-        <td>Personalize recommendations to your goals</td>
-        <td>OpenAI (api.openai.com)</td>
-      </tr>
-    </table>
-
-    <p>This data is sent directly from your device to OpenAI using <strong>your own API key</strong>. Macrovue does not operate any intermediate servers. We never see, store, or have access to your menu scans or API key.</p>
-    <p>OpenAI's data handling is governed by their <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://openai.com/policies/terms-of-use" target="_blank" rel="noopener">Terms of Use</a>. When using the API with your own key, OpenAI states that API data is not used to train their models.</p>
-
-    <h2>4. Your OpenAI API Key</h2>
-    <p>The App requires you to provide your own OpenAI API key to function. This key is:</p>
-    <ul>
-      <li>Stored securely in the iOS Keychain on your device</li>
-      <li>Never transmitted to Macrovue or any server other than OpenAI</li>
-      <li>Used only for direct API calls from your device to OpenAI</li>
-      <li>Deletable at any time from the App's Settings screen</li>
-    </ul>
-
-    <h2>5. What We Do NOT Collect</h2>
-    <ul>
-      <li>No personal information (name, email, phone number, location)</li>
-      <li>No photos or images</li>
-      <li>No analytics or usage tracking</li>
-      <li>No device identifiers or advertising IDs</li>
-      <li>No crash reports sent to us</li>
-      <li>No accounts, logins, or registration</li>
-    </ul>
-
-    <div class="highlight">
-      We do not operate any servers. There is no Macrovue backend, database, or cloud service. The App communicates only with OpenAI's API using your own credentials.
-    </div>
-
-    <h2>6. Consent</h2>
-    <p>Before any data is sent to OpenAI, the App presents a clear consent screen explaining what will be shared. You must explicitly approve before analysis occurs. You can revoke this consent at any time in the App's Settings, which will prevent any further data transmission.</p>
-
-    <h2>7. Children's Privacy</h2>
-    <p>Macrovue is not directed at children under 13. We do not knowingly collect any personal information from children.</p>
-
-    <h2>8. Data Deletion</h2>
-    <p>Since all data is stored locally on your device:</p>
-    <ul>
-      <li><strong>Delete all data:</strong> Delete the App from your device. All locally stored data (preferences, API key) will be removed.</li>
-      <li><strong>Delete your API key:</strong> Clear it from the App's Settings screen at any time.</li>
-      <li><strong>Revoke AI consent:</strong> Toggle off AI Analysis in Settings to prevent any future data transmission.</li>
-    </ul>
-
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated effective date. Continued use of the App constitutes acceptance of the revised policy.</p>
-
-    <h2>10. Contact</h2>
-    <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:macrovue@proton.me">macrovue@proton.me</a>.</p>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
+</nav>
+
+<!-- ======== Privacy Content ======== -->
+<div class="privacy-content">
+  <h1>Privacy Policy</h1>
+  <p class="last-updated">Last updated: February 8, 2026</p>
+
+  <h2>Overview</h2>
+  <p>Macrovue is designed with privacy as a core principle. We collect as little data as possible, and your photos never leave your device.</p>
+
+  <h2>What Data We Collect</h2>
+  <p><strong>We do not collect personal data.</strong> Macrovue does not require an account, does not ask for your name or email, and does not track you across apps or websites.</p>
+
+  <h2>Camera &amp; Photo Access</h2>
+  <p>Macrovue uses your device's camera to photograph restaurant menus. Here's what happens:</p>
+  <ul>
+    <li><strong>Photos stay on your device.</strong> Images are never uploaded to our servers or any third-party service.</li>
+    <li><strong>On-device text extraction.</strong> Menu text is extracted from the photo using Apple's on-device Vision framework. This happens entirely on your iPhone.</li>
+    <li><strong>Text sent for analysis.</strong> Only the extracted text (not the photo) is sent to OpenAI's API for nutritional analysis. This text contains menu item names and descriptions — no personal information.</li>
+  </ul>
+
+  <h2>Location Data</h2>
+  <p>If you use the "Explore Nearby" feature, Macrovue accesses your location to show restaurants near you. Your location data is:</p>
+  <ul>
+    <li>Used only to query nearby restaurant information</li>
+    <li>Never stored on our servers</li>
+    <li>Never shared with third parties for advertising or tracking</li>
+  </ul>
+  <p>Location access is optional. Macrovue works without it — you can always scan menus directly with your camera.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>Macrovue uses the following third-party service:</p>
+  <ul>
+    <li><strong>OpenAI API</strong> — to analyze extracted menu text and generate nutritional estimates. Only menu text is sent. OpenAI's data usage policy applies to this data. Per OpenAI's API terms, API inputs and outputs are not used to train their models.</li>
+  </ul>
+
+  <h2>Analytics &amp; Tracking</h2>
+  <p>Macrovue does not use any analytics SDKs, tracking pixels, or advertising frameworks. We do not track your behavior, collect device identifiers, or build user profiles.</p>
+
+  <h2>Data Storage</h2>
+  <p>Your dietary preferences and goals are stored locally on your device using Apple's standard storage mechanisms. This data is not synced to any server and is deleted when you uninstall the app.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>Macrovue does not knowingly collect data from children under 13. Since we don't collect personal data from any users, this applies universally.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If we make material changes to this policy, we'll update the "Last updated" date at the top. We recommend checking back occasionally.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this privacy policy? Reach us at <a href="mailto:privacy@macrovue.app">privacy@macrovue.app</a>.</p>
+</div>
+
+<!-- ======== Footer ======== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:support@macrovue.app">Support</a>
+      <a href="mailto:hello@macrovue.app">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://tiktok.com/@macrovue" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://instagram.com/macrovue" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2026 Macrovue</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ======== Scripts ======== -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+</script>
 </body>
 </html>
