@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use — Macrovue</title>
+  <meta name="description" content="Macrovue terms of use. Plain-language terms for using the Macrovue app.">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ======== Nav ======== -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Macrovue</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#features">Features</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ======== Terms Content ======== -->
+<div class="privacy-content">
+  <h1>Terms of Use</h1>
+  <p class="last-updated">Last updated: February 2026</p>
+
+  <p>By downloading or using Macrovue, you agree to these terms.</p>
+
+  <h2>The App</h2>
+  <p>Macrovue is a menu scanning and nutrition recommendation app. It uses your device camera to read restaurant menus, extracts text on-device, and sends that text to OpenAI's AI service for analysis. Recommendations are AI-generated estimates and should not be treated as medical or dietary advice. Always consult a healthcare professional for specific dietary needs.</p>
+
+  <h2>Free Tier</h2>
+  <p>Macrovue provides 5 free menu scans. The Explore tab (nearby restaurant map) is always free. After your free scans are used, a subscription is required for additional scans.</p>
+
+  <h2>Macrovue Pro Subscription</h2>
+  <ul>
+    <li>Monthly: $4.99/month</li>
+    <li>Annual: $29.99/year (equivalent to $2.49/month)</li>
+  </ul>
+  <p>Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period. You can manage or cancel your subscription at any time in your iPhone Settings &rarr; Apple ID &rarr; Subscriptions.</p>
+  <p>Prices may vary by region and are subject to change. Any price changes will take effect at the start of your next billing period following notice.</p>
+
+  <h2>Accuracy Disclaimer</h2>
+  <p>Macrovue provides AI-generated nutritional estimates based on menu text. These are approximations, not precise measurements. Actual nutritional content may vary based on preparation, portion sizes, and ingredients. Macrovue is not a substitute for professional nutritional or medical advice.</p>
+  <p>Do not rely on Macrovue for allergy or food sensitivity decisions. Always verify ingredients directly with the restaurant if you have food allergies or dietary restrictions that affect your health.</p>
+
+  <h2>Acceptable Use</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Reverse engineer, decompile, or attempt to extract the source code of the app</li>
+    <li>Use the app to transmit harmful, illegal, or offensive content</li>
+    <li>Attempt to circumvent the scan limit or subscription system</li>
+    <li>Use automated tools to access the app's features</li>
+  </ul>
+
+  <h2>Intellectual Property</h2>
+  <p>Macrovue, its design, content, and features are owned by Macrovue and protected by applicable intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to use the app for personal, non-commercial purposes.</p>
+
+  <h2>Termination</h2>
+  <p>We reserve the right to suspend or terminate your access to Macrovue if you violate these terms. You can stop using the app at any time by deleting it from your device and canceling any active subscription.</p>
+
+  <h2>Limitation of Liability</h2>
+  <p>Macrovue is provided "as is" without warranties of any kind. To the maximum extent permitted by law, Macrovue shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the app.</p>
+
+  <h2>Changes to These Terms</h2>
+  <p>We may update these terms from time to time. Changes will be posted on this page with an updated date. Continued use of the app after changes constitutes acceptance of the revised terms.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about these terms? Reach us at <a href="mailto:privacy@macrovue.app">privacy@macrovue.app</a>.</p>
+</div>
+
+<!-- ======== Footer ======== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="mailto:support@macrovue.app">Support</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://tiktok.com/@macrovue" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://instagram.com/macrovue" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2026 Macrovue</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ======== Scripts ======== -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+</script>
+</body>
+</html>
